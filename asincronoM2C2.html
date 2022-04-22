@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>
+        <h2>Número de la suerte:</h2>
+        <h3>¿Tu número de la suerte es Par o Impar?</h3>
+        <p>Ingrésalo aquí</p>
+        <input type="number" id="numUsuario">
+        <input type="button" value="analizar" onclick="alert('Tu número de la suerte... ' + parImpar() )">
+    </label>
+
+    <label>
+        <h2>Le invito a conocer si está o no en edad de jubilarse:</h2>
+        <h3>Por favor ingrese su edad</h3>
+        <br>
+        <input type="number" id="edadUsuario">
+        <br>
+        <h3>Por favor indique su género. </h3>
+        <p>Seleccione "M" para masculino y "F" para femenino</p>
+        <br>
+        <select name="género" id="generoUsuario">
+            <option>M</option>
+            <option>F</option>
+        </select>
+        <input type="button" value="evaluar" onclick="alert( edadJubila() )">
+    </label>
+
+    <script src="asincronoM2C2.js" type="text/JavaScript"></script>
+</body>
+</html>
